@@ -47,7 +47,7 @@ resource "azurerm_subnet" "aks" {
 
 module "aks" {
   # IaC module repo:
-  source = "git@github.com:danishkhan24/saas-iac-modules.git//infra-modules/aks?ref=develop"
+  source = "https://github.com/danishkhan24/saas-iac-modules.git//infra-modules/aks?ref=develop"
 
   name                = var.cluster_name
   location            = var.location
