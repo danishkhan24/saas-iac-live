@@ -59,7 +59,7 @@ module "aks" {
   vm_size            = var.vm_size
 
   vnet_subnet_id          = azurerm_subnet.aks.id
-  private_cluster_enabled = false # Keeping AKS public for test
+  private_cluster_enabled = true # Making it private
 
   tags = var.tags
 }
